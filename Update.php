@@ -1,11 +1,6 @@
-<?php
-header('Content-type: application/json; charset=utf-8');
-header("access-control-allow-origin: *");
- 
-$data = array( 'apple', 'orange', 'strawberry', 'lemon', 'pear' );
-$json = json_encode($data);
- 
-echo isset($_GET['callback'])
- ? "{$_GET['callback']}($json)"
- : $json;
+<?php header('content-type: application/json; charset=utf-8');
+
+$data = array(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+echo $_GET['callback'] . '('.json_encode($data).')';
 ?>
