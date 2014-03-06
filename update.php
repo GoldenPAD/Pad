@@ -1,4 +1,4 @@
-<?php
+
  $fname = $_GET['firstname'];
       if($fname=='Jeff')
       {
@@ -6,4 +6,3 @@
          echo $_GET['callback'] . '(' . "{'message' : 'Jeff Hansen'}" . ')';
 
       }
-?>
