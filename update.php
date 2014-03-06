@@ -3,7 +3,7 @@
       if($fname=='Jeff')
       {
           //header("Content-Type: application/json");
-         echo $_GET['callback'] . '(' . "{'fullname' : 'Jeff Hansen'}" . ')';
+         echo $_GET['callback'] . '(' . "{'message' : 'Jeff Hansen'}" . ')';
 
       }
 ?>
