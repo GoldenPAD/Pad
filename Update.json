@@ -1,0 +1,3 @@
+
+if ($GET['callback'] != '') $json = $GET['callback']."( $json )"; 
+return $json; 
